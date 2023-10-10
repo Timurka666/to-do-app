@@ -10,7 +10,7 @@ import TaskPage from "../pages/taskPage";
 
 function App() {
   return (
-    <HashRouter basename="/to-do-app">
+    <HashRouter>
       <Provider store={store}>
         <AppLayout modal={<Modal />} navbar={<Navbar />} footer={<Footer />}>  
           <Routes>
