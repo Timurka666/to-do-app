@@ -1,0 +1,25 @@
+@use '../../../shared/style/global';
+
+.project-item {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: gray;
+    border-width: 2px;
+    background-color: white;
+    min-width: 10rem;
+    min-height: 7rem;
+    padding: 2rem;
+    transition: all;
+    transition-duration: 0.2s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(209, 209, 209);
+    }
+
+    .project-title {
+        color: global.$default-color;
+        font-size: x-large;
+        font-weight: 600;
+    }
+}

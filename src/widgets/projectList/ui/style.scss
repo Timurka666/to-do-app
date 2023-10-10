@@ -1,0 +1,24 @@
+.project-list {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+
+    .project-list-title {
+        color: black;
+        font-size: x-large;
+        font-weight: bold;
+    }
+}
+
+ul.project-list-wrapper {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    li {
+        list-style-type: none;
+        
+
+    }
+}

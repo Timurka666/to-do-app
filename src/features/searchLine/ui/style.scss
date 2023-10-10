@@ -1,0 +1,55 @@
+@use '../../../shared/style/global';
+
+ul.task-search-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    width: 250px;
+    height: 20rem;
+    overflow: auto;
+    top: 64px;
+    left: calc(50vw - 250px / 2);
+    margin: 0 auto;
+    background-color: rgb(219, 219, 219);
+    list-style-type: none;
+    padding-inline-start: 0;
+    li {
+        list-style-type: none;
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        background-color: rgb(219, 219, 219);
+        transition: all;
+        transition-duration: 0.4s;
+
+        &:hover {
+            background-color: rgb(141, 141, 141);
+            cursor: pointer;
+        }
+    }
+}
+
+@media(min-width: 767px) {
+    ul.task-search-list {
+        width: 400px;
+        height: 20rem;
+        overflow: auto;
+        top: 64px;
+        left: calc(50vw - 400px / 2);
+    }
+}
+
+@media(min-width: 1023px) {
+    ul.task-search-list {
+        gap: 1rem;
+        position: absolute;
+        width: 600px;
+        height: 20rem;
+        overflow: auto;
+        top: 64px;
+        left: auto;
+        margin: 0 auto;
+    }
+
+}

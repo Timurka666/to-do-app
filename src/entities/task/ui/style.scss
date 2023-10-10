@@ -1,0 +1,19 @@
+.task-item {
+    min-width: 80%;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 1rem;
+}
+
+@media (min-width: 767px) {
+    .task-item {
+        min-height: 300px;
+    }
+}
+
+@media (min-width: 1023px) {
+    .task-item {
+        min-width: 80%;
+    }
+}

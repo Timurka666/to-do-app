@@ -1,0 +1,41 @@
+
+
+@use '../../style/global';
+
+@mixin button-theme($buttonType: global.$default-color) {
+    min-width: 3rem;
+    min-height: 2rem;
+    display: block;
+    padding: 0.3rem 0.6rem;
+    font-size: large;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 3px;
+    border-color: $buttonType;
+    border-radius: 10px;
+    color: $buttonType;
+    background-color: white;
+    transition: all;
+    transition-duration: 200ms;
+
+    &:hover {
+        cursor: pointer;
+        color: white;
+        background-color: $buttonType;
+    }
+}
+
+button {
+    &.default {
+        @include button-theme();
+    }
+    &.success {
+        @include button-theme(global.$success-color);
+    }
+    &.cancel {
+        @include button-theme(global.$cancel-color);
+    }
+    &.warning {
+        @include button-theme(global.$warning-color);
+    }
+}

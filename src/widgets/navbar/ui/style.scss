@@ -1,0 +1,43 @@
+@use '../../../shared/style/global';
+
+header {
+    width: 100vw;
+    min-height: global.$header-height;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: global.$default-color;
+    padding: 0;
+    gap: 1rem;
+
+    h1 {
+        font-size: medium;
+        color: white;
+    }
+}
+
+@media(min-width: 767px) {
+    header {
+        width: 100vw;
+        min-height: global.$header-height;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        background-color: global.$default-color;
+        padding: 0 global.$container-padding;
+        gap: 4rem;
+    
+        h1 {
+            font-size: large;
+            color: white;
+        }
+    }
+}

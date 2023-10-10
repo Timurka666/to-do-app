@@ -1,0 +1,25 @@
+@use '../../../shared/style/global';
+
+footer {
+    min-width: 100%;
+    min-height: global.$footer-height;
+    z-index: 1;
+    background-color: global.$default-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        width: calc(100% - (global.$container-padding * 2));
+        min-height: global.$footer-height;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        p {
+            color: white;
+            font-size: large;
+        }
+    }
+
+}
