@@ -1,6 +1,6 @@
 {
-  "homepage": "https://timurka666.github.io/to-do-app",
   "name": "todo-app",
+  "homepage": "https://timurka666.github.io/to-do-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,9 +42,9 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 3 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version"
     ]
   },
   "devDependencies": {
